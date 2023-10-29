@@ -1,0 +1,45 @@
+#content-left {
+    width: 35%;
+    height: max-content;
+    background-color: #F6D0A1;
+    border-radius: 0 20px 20px 0;
+    padding: 1rem;
+}
+
+.description {
+    font-size: 25px;
+    color: #B94631;
+    margin: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#judul {
+    font-weight: bolder;
+    border-bottom: 3px solid #B94631;
+    font-size: 40px;
+    color: #B94631;
+    text-align: center;
+    margin: 1rem;
+}
+
+#content-container {
+    background-image: url(../assets/BackgroundAboutUS.png);
+    background-size: cover;
+    padding: 1rem 0;
+}
+
+#banner-bottom {
+    width: 100%;
+}
+
+@media screen and (max-width : 900px) {
+    #content-left {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #content-left {
+        width: 100%;
+    }
+}

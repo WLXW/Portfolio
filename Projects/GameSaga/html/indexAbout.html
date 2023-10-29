@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/styleAbout.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <div class="header-title">About</div>
+          <div class="menubar">
+            <ul>
+              <li><a href="indexHome.html">Home</a></li>
+              <li>
+                <a href="indexHome.html">Game</a>
+                <ul class="dropdown">
+                    <li><a href="indexTicTacToe.html">Tic Tac Toe</a></li>
+                    <li><a href="indexWhackAMole.html">Whack-a-Mole</a></li>
+                    <li><a href="indexMemoryGame.html">Memory Cards</a></li>
+                    <li><a href="indexSnakeGame.html">Snake</a></li>
+                    <li><a href="indexRockPaperScissors.html">Rock Paper Scissors</a></li>
+                </ul>
+            </li>
+            <li><a href="indexAbout.html">About</a></li>
+            </ul>
+          </div>
+          <div id="username">
+            <input type="text" id="inputField" placeholder="Enter your name">
+            <button onclick="displayGreeting()" id="submit-button" class="button">Submit</button>
+            <button onclick="eraseUsernameFromLocalStorage()" id="erase-button" class="button">Erase</button>
+          </div>
+        </div>
+      </header>
+    <main>
+      <h1>Welcome to Game Saga!</h1>
+
+      <p>At Game Saga, we bring you a collection of entertaining and addictive mini-games to keep you entertained for hours. Whether you're looking to challenge your friends or just have some solo gaming fun, we have a variety of games that will suit your preferences.</p>
+    <br>
+      <h2>Games Available:</h2>
+      <ol>
+        <li>Tic Tac Toe: Test your strategic skills in this classic game of X's and O's. Challenge your friends or play against the computer and see who can get three in a row first.</li>
+        <li>Whack a Mole: Get ready to improve your reflexes in this fast-paced game. Keep an eye out for those mischievous moles and try to whack them as they pop up. The more you whack, the higher your score!</li>
+        <li>Memory Cards: Put your memory to the test with this fun matching game. Flip the cards and find their pairs as quickly as possible. Can you remember where each card is located?</li>
+        <li>Snake: Remember the old-school Nokia game? Well, it's back! Control the snake and guide it to eat the apples while avoiding collisions with the walls or its own tail. How long can you make your snake grow?</li>
+        <li>Rock Paper Scissors: It's time for a classic showdown! Challenge your friends or the computer in the ultimate game of hand gestures. Will you choose rock, paper, or scissors? The winner takes it all!</li>
+      </ol>
+    <br>
+      <p>We value your feedback, and we encourage you to leave your comments and suggestions on each game's page. Your input will help us improve and provide you with an even better gaming experience. So, don't hesitate to share your thoughts and let us know which games you enjoy the most.</p>
+    
+      <p>Get ready to have a blast at Game Saga. Start playing now and challenge yourself or your friends to beat the high scores!</p>
+    
+    </main>
+    <script src="../script/script.js"></script>
+</body>
+</html>

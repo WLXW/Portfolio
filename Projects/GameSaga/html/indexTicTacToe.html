@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/styleTicTacToe.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-title">Tic Tac Toe</div>
+            <div class="menubar">
+                <ul>
+                    <li><a href="indexHome.html">Home</a></li>
+                    <li>
+                        <a href="indexHome.html">Game</a>
+                        <ul class="dropdown">
+                            <li><a href="indexTicTacToe.html">Tic Tac Toe</a></li>
+                            <li><a href="indexWhackAMole.html">Whack-a-Mole</a></li>
+                            <li><a href="indexMemoryGame.html">Memory Cards</a></li>
+                            <li><a href="indexSnakeGame.html">Snake</a></li>
+                            <li><a href="indexRockPaperScissors.html">Rock Paper Scissors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="indexAbout.html">About</a></li>
+                </ul>
+            </div>
+            <div id="username">
+                <input type="text" id="inputField" placeholder="Enter your name">
+                <button onclick="displayGreeting()" id="submit-button" class="button">Submit</button>
+                <button onclick="eraseUsernameFromLocalStorage()" id="erase-button" class="button">Erase</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="game-board">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+
+        <div id="turn-indicator">
+            <p>Player <span id="current-player">X</span>'s Turn</p>
+        </div>
+
+        <button id="reset-button" onclick="resetGame()">Reset</button>
+    </main>
+    <div class="comment-section">
+        <h2>Comments</h2>
+        <form id="comment-form">
+          <input type="text" id="comment-input" placeholder="Write your comment">
+          <button type="submit">Submit</button>
+        </form>
+        <div id="comments-list"></div>
+    </div>      
+    <script src="../script/scriptTicTacToe.js"></script>
+    <script src="../script/comment.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

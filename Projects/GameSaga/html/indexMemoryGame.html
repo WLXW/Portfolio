@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/styleMemoryGame.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="header-title">Memory Cards</div>
+        <div class="menubar">
+          <ul>
+            <li><a href="indexHome.html">Home</a></li>
+            <li>
+              <a href="indexHome.html">Game</a>
+              <ul class="dropdown">
+                  <li><a href="indexTicTacToe.html">Tic Tac Toe</a></li>
+                  <li><a href="indexWhackAMole.html">Whack-a-Mole</a></li>
+                  <li><a href="indexMemoryGame.html">Memory Cards</a></li>
+                  <li><a href="indexSnakeGame.html">Snake</a></li>
+                  <li><a href="indexRockPaperScissors.html">Rock Paper Scissors</a></li>
+              </ul>
+          </li>
+          <li><a href="indexAbout.html">About</a></li>
+          </ul>
+        </div>
+        <div id="username">
+          <input type="text" id="inputField" placeholder="Enter your name">
+          <button onclick="displayGreeting()" id="submit-button" class="button">Submit</button>
+          <button onclick="eraseUsernameFromLocalStorage()" id="erase-button" class="button">Erase</button>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="../images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="../images/img-4.png" alt="card-img">
+          </div>
+        </li>
+        <div class="details">
+          <p class="time">Time: <span><b>20</b>s</span></p>
+          <p class="flips">Flips: <span><b>0</b></span></p>
+          <button>Refresh</button>
+        </div>
+      </ul>
+    </div>
+    <div class="comment-section">
+      <h2>Comments</h2>
+      <form id="comment-form">
+        <input type="text" id="comment-input" placeholder="Write your comment">
+        <button type="submit">Submit</button>
+      </form>
+      <div id="comments-list"></div>
+    </div>    
+    <script src="../script/scriptMemoryGame.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/comment.js"></script>
+    
+  </body>
+</html>

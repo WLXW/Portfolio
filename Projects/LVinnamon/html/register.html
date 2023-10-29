@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="../assets/LVinnamon-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img id="logo" src="../assets/LVinnamon_Logo.png" alt="err">
+            </div>
+            <div class="header-menu">
+                <div class="menu"><a href="home.html">Home</a></div>
+                <div class="menu">
+                    <a href="products.html">Products</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="products.html#cinnamon-rolls">Cinnamon Rolls</a></li>
+                            <li><a href="products.html#beverages">Beverages</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu"><a href="aboutus.html">About Us</a></div>
+                <div class="menu">
+                    <a href="location.html"><img id="location" src="../assets/location.svg" alt="err">Location</a>
+                </div>
+                <div class="menu"><a href="register.html">Register</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <div id="form-title">
+                <h1>Register</h1>
+                <hr>
+            </div>
+            <div class="form-input-container">
+                <form action="">
+                    <div class="form-input">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password">
+                    </div>
+                    <div class="form-input">
+                        <label>Gender</label>
+                        <div class="radio-container">
+                            <div class="radio">
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="region">Region</label>
+                        <select id="region" name="region">
+                            <option value="" disabled selected hidden>Choose a region</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="yogyakarta">Yogyakarta</option>
+                            <option value="bali">Bali</option>
+                        </select>
+                    </div>
+                    <div class="form-input" id="toc-container">
+                        <input type="checkbox" id="toc" name="toc">
+                        <label id="toc-text" for="toc">I agree to the <a href="">Terms & Conditions</a></label>
+                    </div>
+                </form>
+            </div>
+            <button type="button" id="register" class="register">Register</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <img src="../assets/LVinnamon_Logo.png" alt="">
+            <div class="footer-menu-container">
+                <div class="footer-menu">
+                    <div class="footer-menu-title">Menu</div>
+                    <div class="footer-menu-list">
+                        <div class="menu"><a href="home.html">Home</a></div>
+                        <div class="menu"><a href="products.html">Products</a></div>
+                        <div class="menu"><a href="aboutus.html">About Us</a></div>
+                        <div class="menu"><a href="location.html">Location</a></div>
+                        <div class="menu"><a href="register.html">Register</a></div>
+                    </div>
+                </div>
+                <div class="footer-category">
+                    <div class="footer-menu-title">Categories</div>
+                    <div class="footer-menu-list">
+                        <div class="menu"><a href="products.html#cinnamon-rolls">Cinnamon Rolls</a></div>
+                        <div class="menu"><a href="products.html#beverages">Beverages</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <a href="https://www.facebook.com/"><img class="social-logo" src="../assets/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/"><img class="social-logo" src="../assets/instagram.svg" alt=""></a>
+            <a href="https://www.twitter.com/"><img class="social-logo" src="../assets/twitter.svg" alt=""></a>
+            <a href="https://www.linkedin.com/"><img class="social-logo" src="../assets/linkedIn.svg" alt=""></a>
+        </div>
+    </footer>
+    <script src="../script/register.js" defer></script>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>

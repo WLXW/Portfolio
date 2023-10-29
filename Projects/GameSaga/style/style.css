@@ -1,0 +1,140 @@
+body{
+  align-items: unset;
+}
+
+.container {
+  display : flex;
+  justify-content : center;
+}
+
+.box {
+  width: 250px;
+  border-radius: 10px;
+  height: 500px;
+  background-color: #fff9f94f;
+  transition: flex-grow 0.9s ease;
+  flex-grow: 1px;
+  margin-top : 2rem;
+  margin-left : 1rem;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.box1 {
+  background-image: url("../images/game-1.png");
+  width: 250px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.box2 {
+  background-image: url("../images/game-2.png");
+  width: 250px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.box3 {
+  background-image: url("../images/game-3.png");
+  width: 250px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.box4 {
+  background-image: url("../images/game-4.png");
+  width: 250px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.box5 {
+  background-image: url("../images/game-5.png");
+  width: 250px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.604);
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #7513b7;
+}
+
+.content-box1 {
+  text-align: center;
+}
+.box:hover {
+  flex-grow: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: flex-grow 0.9s ease;
+  border-radius: 10px;
+}
+
+.overlay1 {
+  background-image: url("../images/game-1.png");
+}
+
+.overlay2 {
+  background-image: url("../images/game-2.png");
+}
+
+.overlay3 {
+  background-image: url("../images/game-3.png");
+}
+
+.overlay4 {
+  background-image: url("../images/game-4.png");
+}
+
+.overlay5 {
+  background-image: url("../images/game-5.png");
+}
+
+.box:hover .overlay {
+  display: flex;
+}
+
+.home-button{
+  display: inline-block;
+  height: 3rem;
+  width: 80%;
+  background-color: #FF3CAC;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+@media screen and (max-width : 1000px) {
+  .container{
+    flex-direction: column;
+  }
+}

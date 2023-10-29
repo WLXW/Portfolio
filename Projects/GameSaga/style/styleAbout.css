@@ -1,0 +1,11 @@
+main {
+  width: 80%;
+  background-color: #dad8d83d;
+  color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+}

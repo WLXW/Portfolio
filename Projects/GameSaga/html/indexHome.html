@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Game Saga</title>
+</head>
+<body>
+    <header>
+      <div class="header-content">
+        <div class="header-title">Game Saga</div>
+        <div class="menubar">
+          <ul>
+            <li><a href="indexHome.html">Home</a></li>
+            <li>
+              <a href="indexHome.html">Game</a>
+              <ul class="dropdown">
+                  <li><a href="indexTicTacToe.html">Tic Tac Toe</a></li>
+                  <li><a href="indexWhackAMole.html">Whack-a-Mole</a></li>
+                  <li><a href="indexMemoryGame.html">Memory Cards</a></li>
+                  <li><a href="indexSnakeGame.html">Snake</a></li>
+                  <li><a href="indexRockPaperScissors.html">Rock Paper Scissors</a></li>
+              </ul>
+          </li>
+          <li><a href="indexAbout.html">About</a></li>
+          </ul>
+        </div>
+        <div id="username">
+          <input type="text" id="inputField" placeholder="Enter your name">
+          <button onclick="displayGreeting()" id="submit-button" class="button">Submit</button>
+          <button onclick="eraseUsernameFromLocalStorage()" id="erase-button" class="button">Erase</button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="box box1">
+        <div class="content">
+          <div>Whack a Mole</div>
+        </div>
+        <div class="overlay overlay1">
+          <button class="home-button" onclick="location.href='indexWhackAMole.html'">Play</button>
+        </div>
+      </div>
+      <div class="box box2">
+        <div class="content">
+          <div>Memory Game</div>
+        </div>
+        <div class="overlay overlay2">
+          <button class="home-button" onclick="location.href='indexMemoryGame.html'">Play</button>
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="content">
+          <div>Tic Tac Toe</div>
+        </div>
+        <div class="overlay overlay3">
+          <button class="home-button" onclick="location.href='indexTicTacToe.html'">Play</button>
+        </div>
+      </div>
+      <div class="box box4">
+        <div class="content">
+          <div class="content-box1">
+            <div>Rock</div>
+            <div>Paper</div>
+            <div>Scissors</div>
+            </div>
+        </div>
+        <div class="overlay overlay4">
+          <button class="home-button" onclick="location.href='indexRockPaperScissors.html'">Play</button>
+        </div>
+      </div>
+      <div class="box box5">
+        <div class="content">
+          <div>Snake</div>
+        </div>
+        <div class="overlay overlay5">
+          <button class="home-button" onclick="location.href='indexSnakeGame.html'">Play</button>
+        </div>
+      </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>
